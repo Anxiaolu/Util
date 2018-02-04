@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>excel解析</title>
+<style type="text/css">
+        .main{
+            overflow: hidden;
+            margin: 0 0 20px;
+        }
+        #drop{
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            cursor: pointer;
+            border: 3px dashed #f5f5f5;
+            float: left;
+        }
+        #drop.active{
+            border-color: #f00;
+        }
+        #upload{
+            display: none;
+        }
+        #table{
+            margin-left: 20px;
+            float: left;
+        }
+        #download{
+            
+        }
+        a{
+            font-size: 15px;
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+<div id="drop">
+            点击此处或者将文件拖至此处上传
+            <input type="file" id="upload" name="">
+        </div>
+        <div id="download">
+            <a data-type="json" href="javascript:;">导出json</a>
+            <a data-type="txt" href="javascript:;">导出txt</a>
+            <a data-type="csv" href="javascript:;">导出csv</a>
+            <a data-type="xls" href="javascript:;">导出excel</a>
+            <a data-type="doc" href="javascript:;">导出word</a>
+    </div>
+<div id="table">
+    
+</div>
+    </div>
+    
+    <!-- <a href="#" id="download" target="_blank">下载样表</a> -->
+    <script type="text/javascript" src="libs/jszip.js"></script>
+    <script type="text/javascript" src="libs/xlsx.js"></script>
+    <script type="text/javascript" src="libs/Blob.js"></script>
+    <script type="text/javascript" src="libs/FileSaver.js"></script>
+    <script type="text/javascript" src="libs/tableExport.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
